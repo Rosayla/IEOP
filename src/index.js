@@ -1,7 +1,8 @@
 import express from 'express'
 import axios from 'axios'
 
-import { createOrder } from './orders';
+import { createOrder } from './utils/orders.js';
+import { getAllPurchaseItems } from './utils/purchaseItems.js';
 
 const app = express();
 
@@ -32,6 +33,8 @@ app.use(async(req, res, next) => {
 
 app.post("/create-order", createOrder)
 
+
+app.get("/purchase-items", getAllPurchaseItems)
 
 
 
