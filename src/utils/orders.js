@@ -9,7 +9,7 @@ export async function createOrder(req, res) {
         {
             "sellerSupplierParty": "0001",
             "documentType": "ECF",
-            "documentDate": '2022-12-31',
+            "documentDate": '2023-11-31',
             "documentLines": [
                 {
                     "purchasesItem": "ARECA",
